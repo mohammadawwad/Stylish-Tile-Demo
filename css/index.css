@@ -1,0 +1,354 @@
+body.Home {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 300px;
+    position: relative;
+	animation: fadeIn 3s;
+	animation-delay: 9s;
+}
+
+
+@media screen and (min-width: 800px){
+.under-development {
+	font-size: 26px;
+	margin-left: 0%;
+	width: 200%;
+	top: 50px;
+}
+
+/*slide show for home page*/
+.fadein {
+    position:absolute;
+    top: -230px;
+	height: auto;
+    width: 100%;
+}
+.fadein img {
+    position:absolute;
+	height: 700px;
+	width: 100%;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 14s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 14s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#img-1 {
+	background-image: url(imgs/home/main-1.jpg); 
+	background-position: center;
+	background-size: 100%;
+}
+#img-2 {
+    -webkit-animation-delay: -9s;
+	background-image: url(imgs/home/main-2.jpg); 
+	background-position: center;
+	background-size: 100%;
+}
+#img-3 {
+    -webkit-animation-delay: -5s;
+	background-image: url(imgs/home/main-3.jpg); 
+	background-position: center;
+	background-size: 100%;
+}
+
+/* Overlaying Part for home page photos */
+.overlay{
+	position: relative;
+	margin-top: 350px;
+	margin-left: 25%;
+	margin-right: 25%;
+	background-color: rgba(255, 255, 255, 0.562);
+	border: 10px solid rgb(255, 255, 255);
+	padding: 15px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 50%;
+}
+.overlay img{
+	position: relative;
+	height: 100px;
+	margin-top: 20px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+/* Intro Text */
+.grid-container {
+	display: grid;
+	grid-template-areas: 
+	'header header header'
+	'grid-title-1 grid-title-2 grid-title-3'
+	'grid-library-1 grid-library-2 grid-library-3'
+	'grid-item-1 grid-item-2 grid-item-3';
+	padding: 10px;
+	margin-top: 250px;
+	grid-gap: 10px;
+}
+
+/* Library-Button Img */
+.grid-container img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+
+.grid-container img:hover{
+	filter: grayscale(50%);
+	transform: scale(1.08);
+}
+
+/* Photo Library */
+.grid-library .lib{
+	float: none;
+	display: flex;
+	position: relative;
+	margin: auto;
+	justify-content: center;
+}
+
+.grid-library .btn{
+	position: relative;
+	border: 1px solid black;
+}
+
+.grid-main {
+	grid-area: header;
+	font-size: 36px;
+	text-align: center;
+	font-weight: 700;
+	padding-top: 10px;
+}
+
+.grid-title {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 25px;
+	margin-top: 10px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Contact Button */
+.contact-button{
+	position: relative;
+	transition: 0.5s;
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+	padding: 15px;
+	margin-bottom: 45px;
+	background-color: rgb(41, 122, 214);
+	border-radius: 0%;
+	font-size: 20px;
+	box-shadow: none;
+	border: none;
+}
+.contact-button:hover{
+	color: #111;
+	transition: 0.5s;
+	background-color: transparent;
+	border: 2px solid black;
+}
+
+/* Footer */
+.footer_index{
+	position: absolute;
+	bottom: -300px;
+	width: 100%;
+	height: 20%;
+	background: #111;
+}
+
+}
+
+
+
+/*------------------------------------------------------ PHONE VIEW ------------------------------------------------------ */
+@media screen and (max-width: 800px){
+/* Change logo aize for header */
+.logo{
+	height: 61px;
+	width: 197px;
+}
+
+/*slide show for home page*/
+.fadein {
+    position:absolute;
+    top: -190px;
+	height: auto;
+    width: 100%;
+}
+.fadein img {
+    position:absolute;
+	height: 200px;
+	width: 100%;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 14s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 14s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#img-1 {
+	background-image: url(imgs/home/main-1.jpg); 
+	background-position: center;
+	background-size: 100%;
+}
+#img-2 {
+    -webkit-animation-delay: -9s;
+	background-image: url(imgs/home/main-2.jpg); 
+	background-position: center;
+	background-size: 100%;
+}
+#img-3 {
+    -webkit-animation-delay: -5s;
+	background-image: url(imgs/home/main-3.jpg); 
+	background-position: center;
+	background-size: 100%;
+}
+
+/* Overlaying Part for home page photos */
+.overlay{
+	display: none;
+}
+
+
+/* Intro Text */
+.grid-container {
+	display: grid;
+	grid-template-areas: 
+	'header'
+	'grid-title-1 '
+	'grid-library-1 '
+	'grid-item-1 '
+	'grid-title-2 '
+	'grid-library-2 '
+	'grid-item-2'
+	'grid-title-3 '
+	'grid-library-3 '
+	'grid-item-3';
+	padding: 10px;
+	margin-top: 350px;
+	grid-gap: 10px;
+}
+
+/* Library-Button Img */
+.grid-container img {
+    transition: 1s;
+    padding: 15px;
+    width: 250px;
+}
+
+.grid-container img:hover{
+	filter: grayscale(50%);
+	transform: scale(1.08);
+}
+
+/* Photo Library */
+.grid-library .lib{
+	float: none;
+	display: flex;
+	position: relative;
+	margin: auto;
+	justify-content: center;
+}
+
+.grid-library .btn{
+	position: relative;
+	border: 2px solid black;
+}
+
+.grid-main {
+	grid-area: header;
+	font-size: 24px;
+	text-align: center;
+	font-weight: 700;
+	padding-top: 10px;
+}
+
+.grid-title {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 25px;
+	margin-top: 10px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Contact Button */
+.contact-button{
+	position: relative;
+	transition: 0.5s;
+	width: 60%;
+	left: 20%;
+	right: 20%;
+	padding: 15px;
+	margin-bottom: 45px;
+	background-color: rgb(41, 122, 214);
+	border-radius: 0%;
+	font-size: 20px;
+	box-shadow: none;
+	border: none;
+}
+.contact-button:hover{
+	color: #111;
+	transition: 0.5s;
+	background-color: transparent;
+	border: 2px solid black;
+}
+
+
+.footer_phone{
+	position: absolute;
+	top: 90%;
+	width: 100%;
+	height: 28%;
+	background: #111;
+}
+
+
+}
