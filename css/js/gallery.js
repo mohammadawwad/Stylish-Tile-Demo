@@ -38,7 +38,7 @@ if (tileImages || hardwoodImages || vinylImages) {
             newImg.onload = function () {
                 //sets the space between the button and the img
                 let imgWidth = this.width;
-                let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
+                let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 75;
 
                 //creating the next button
                 let newNextBtn = document.createElement("a");
@@ -92,7 +92,7 @@ if (tileImages || hardwoodImages || vinylImages) {
             newImg.onload = function () {
                 //sets the space between the button and the img
                 let imgWidth = this.width;
-                let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
+                let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 75;
 
                 //creating the next button
                 let newNextBtn = document.createElement("a");
@@ -146,7 +146,7 @@ if (tileImages || hardwoodImages || vinylImages) {
             newImg.onload = function () {
                 //sets the space between the button and the img
                 let imgWidth = this.width;
-                let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
+                let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 75;
 
                 //creating the next button
                 let newNextBtn = document.createElement("a");
@@ -218,7 +218,7 @@ function changeImg(change, imageArray) {
 
     newImg.onload = function () {
         let imgWidth = this.width;
-        let calcImgToEdge = (((windowWidth - imgWidth) / 2) - 100);
+        let calcImgToEdge = (((windowWidth - imgWidth) / 2) - 75);
 
         //sets the next button
         let nextBtn = document.querySelector(".img-btn-next");
