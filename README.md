@@ -1,4 +1,4 @@
-# Stylish Tile Website
+# Stylish Tile DEMO Website
 ## https://stylishtile.ca
 ## https://mohammadawwad.github.io/Stylish-Tile-Demo/
 Stylish Tile is  a Flooring and renovation company serving the lower mainland <br>
