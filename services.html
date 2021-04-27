@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Stylish Tile</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tajawal&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/services.css">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="img/logo_favicon.png" />
+</head>
+<body class="services">
+
+	<header>
+		<!--header with logo and buttons-->
+		<h1> <a href="index.html"><img src="img/logo.png"  alt="logo" class="logo" id="logo"></a></h1>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+		<nav>
+			<ul>
+				
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <!-- <li><a href="services.html">Services</a></li>
+                <li><a href="tiles.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li> -->
+			</ul>
+			
+			<p>Please Note Site is Under Development</p>
+		</nav>
+		<label for="nav-toggle" class="nav-toggle-label">
+			<span></span>
+		</label>
+
+		<script>
+			//changes logo dimenstions depending on screen size
+            if (screen.width < 600) {
+                document.getElementById("logo").height = "61.38";
+                document.getElementById("logo").width = "197.8";
+            }
+            if (screen.width > 800) {
+                document.getElementById("logo").height = "92.07";
+                document.getElementById("logo").width = " 296.7";
+            }
+
+		</script>
+	</header>
+
+	
+
+	<div class="services-text-1">
+		<button onclick="tiles();">Tiles</button>
+		<button onclick="hardwood();">Hardwood</button>
+		<button onclick="renovation();">Renovations</button>
+		<button onclick="demolition();">Demolition</button>
+		<button onclick="remodeling();">Bath and kitchen Remodeling</button>
+	</div>
+
+
+	<div id="services-container-tiles">
+		<div class="info-1">
+			<img id="img-1" src="css/imgs/services/tiles/tile-1.jpg" />
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
+		</div>
+		<div class="info-2">
+			<img id="img-2" src="css/imgs/services/tiles/tile-7.jpg" />
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
+		</div>
+	</div>
+
+	<div id="services-container-hardwood">
+		<div class="info-1">
+			<img id="img-1" src="css/imgs/services/hardwood/hardwood-1.jpg" />
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
+		</div>
+		<div class="info-2">
+			<img id="img-2" src="css/imgs/services/hardwood/hardwood-3.jpg" />
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
+		</div>
+	</div>
+
+	<div id="services-container-renovation">
+		<div class="tiles-info-1">
+			<img id="img-1" src="css/imgs/services/renovation/renovation-1.jpg" />
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
+		</div>
+		<div class="tiles-info-2">
+			<img id="img-2" src="css/imgs/services/renovation/renovation-2.jpg" />
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
+		</div>
+	</div>
+
+	<div id="services-container-demolition">
+		<div class="tiles-info-1">
+			<img id="img-1" src="css/imgs/services/bath-kitchen remodeling/remodeling-1.jpg" />
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
+		</div>
+		<div class="tiles-info-2">
+			<img id="img-2" src="css/imgs/services/bath-kitchen remodeling/remodeling-2.jpg" />
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
+		</div>
+	</div>
+
+	<div id="services-container-remodeling">
+		<div class="tiles-info-1">
+			<img id="img-1" src="css/imgs/services/bath-kitchen remodeling/remodeling-1.jpg" />
+			<img id="img-1" src="css/imgs/services/bath-kitchen remodeling/remodeling-3.jpg" />
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
+		</div>
+		<div class="tiles-info-2">
+			<img id="img-2" src="css/imgs/services/bath-kitchen remodeling/remodeling-6.jpg"/>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
+	</div>
+	
+
+	<script>
+		function clear(){
+			document.getElementById("services-container-tiles").style.display = "none";
+			document.getElementById("services-container-hardwood").style.display = "none";
+			document.getElementById("services-container-renovation").style.display = "none";
+			document.getElementById("services-container-demolition").style.display = "none";
+			document.getElementById("services-container-remodeling").style.display = "none";
+		}
+
+		function tiles(){
+			clear();
+			document.getElementById("services-container-tiles").style.display = "block";
+			document.getElementById("services-container-tiles").style.display = "grid";
+		}
+
+		function hardwood(){
+			clear();
+			document.getElementById("services-container-hardwood").style.display = "block";
+			document.getElementById("services-container-hardwood").style.display = "grid";
+		}
+
+		function renovation(){
+			clear();
+			document.getElementById("services-container-renovation").style.display = "block";
+			document.getElementById("services-container-renovation").style.display = "grid";
+		}
+
+		function demolition(){
+			clear();
+			document.getElementById("services-container-demolition").style.display = "block";
+			document.getElementById("services-container-demolition").style.display = "grid";
+		}
+
+		function remodeling(){
+			clear();
+			document.getElementById("services-container-remodeling").style.display = "block";
+			document.getElementById("services-container-remodeling").style.display = "grid";
+		}
+
+	</script>
+
+</body>
+</html>
