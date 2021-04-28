@@ -230,6 +230,14 @@
         }
         .img-btn-next:hover {
             opacity: 0.7;
+            transition: all ease-in-out 100ms;
+            transform: scale(1.08);
+        }
+        .img-btn-next:active{
+            opacity: 0.7;
+            transition: all ease-in-out 100ms;
+            transform: scale(0.95);
+            color: rgb(85, 109, 189);
         }
     
         /* Button Prev */
@@ -247,11 +255,17 @@
             text-transform: uppercase;
             font-size: 50px;
         }
-    
         .img-btn-prev:hover {
             opacity: 0.7;
+            transition: all ease-in-out 100ms;
+            transform: scale(1.08);
         }
-    
+        .img-btn-prev:active{
+            opacity: 0.7;
+            transition: all ease-in-out 100ms;
+            transform: scale(0.95);
+            color: rgb(85, 109, 189);
+        }
 }
 
 
