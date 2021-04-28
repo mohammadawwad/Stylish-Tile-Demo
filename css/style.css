@@ -171,10 +171,10 @@ nav a{
 	}
 	nav a{
 		position: relative;
-		left: 250px;
+		left: 200px;
 		opacity: 1;
 		font-size: 40px;
-		color:rgb(241, 14, 14)
+		color:rgb(0, 0, 0)
 	}
 	nav ul{
 		display: flex;
