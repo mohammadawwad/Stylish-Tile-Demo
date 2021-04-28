@@ -37,7 +37,7 @@ if (tileImages || hardwoodImages || vinylImages) {
 
             document.addEventListener('keydown', function(event) {
                 if(event.key == "ArrowLeft") {
-                    changeImg(0, tileImage);
+                    changeImg(0, tileImages);
                 }
                 else if(event.key == "ArrowRight") {
                     changeImg(1, tileImages);
