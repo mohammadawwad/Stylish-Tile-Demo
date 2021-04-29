@@ -334,6 +334,7 @@ body.Home {
 	font-size: 20px;
 	box-shadow: none;
 	border: none;
+	-webkit-tap-highlight-color: transparent;
 }
 .contact-button:hover{
 	color: #111;
