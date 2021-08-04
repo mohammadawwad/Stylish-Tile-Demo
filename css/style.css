@@ -123,8 +123,7 @@ nav li{
 nav a{
 	color: rgb(0, 0, 0);
 	text-decoration: none;
-	font-size: 2rem;
-	font-weight: bold;
+	font-size: 1rem;
 	text-transform: uppercase;
 	opacity:0;
 	transition: opacity 150ms ease-in-out;
@@ -173,7 +172,7 @@ nav a{
 		position: relative;
 		left: 200px;
 		opacity: 1;
-		font-size: 40px;
+		font-size: 26px;
 		color:rgb(0, 0, 0)
 	}
 	nav ul{
@@ -615,8 +614,47 @@ button {
 }
 
 
+/* Career Page */
+.career-info h2 {
+	font-size: 25px;
+	width: 50%;
+	font-weight:normal;
+	position: absolute;
+	text-align: left;
+	top: 60%;
+	left: 5%;
+	padding: 15px;
+	margin: 10px; 
+	color: black;
+}
 
-
+.career-info h1 {
+	font-size: 25px;
+	font-weight:bold;
+	width: 50%;
+	position: absolute;
+	text-align: left;
+	top: 60%;
+	left: 5%;
+	padding: 15px;
+	margin: 10px;
+	color: black;
+}
+.career_pic1 {
+	/* Full height */
+	position: absolute;
+	top: 61%;
+	right: 5%;
+}
+.career_pic {
+	background-image: url(imgs/career.jpg);
+	height: 450px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-top: 20%;
+}
 
 
 
